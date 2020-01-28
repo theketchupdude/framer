@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Framer</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <div class="flex-container" id="frameContainer">
+      <iframe src="https://trello.com/b/v4ZmOMOX.html"></iframe>
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLG_dYtYoNm4vI_r8c457LFwmN7_tSM77zpXTaxjdvtu55PUK1k1xL0WMI8owYfCfrCcQSfNmoVivw/pubhtml?gid=2026659831&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </div>
+
+    <a href="#" class="float" id="add">
+      <i class="material-icons button">add_circle</i>
+    </a>
+    
+    <script>
+      document.getElementById("add").onclick = function(){
+	      var frame = document.createElement("iframe");
+
+	      document.getElementById("frameContainer").appendChild(frame);
+      }
+    </script>
+  </body>
+</html>

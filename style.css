@@ -24,10 +24,18 @@ iframe{
   right: 10px;
 }
 
+.float2{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  left: 10px;
+}
+
 .button{
   font-size: 60px !important;
-  color: black;
   opacity: 0;
+  color: black;
 }
 
 .button:hover{

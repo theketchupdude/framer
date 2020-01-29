@@ -22,10 +22,27 @@
     </a>
     
     <script>
+      var refreshTimer = setInterval(function(){
+    	location.reload(true);
+        }, 300000);
+	    
       document.getElementById("add").onclick = function(){
 	      var frame = document.createElement("iframe");
 
 	      document.getElementById("frameContainer").appendChild(frame);
+      }
+      document.getElementById("autoRefresh").onclick = function(){
+        var rButton = document.getElementById("rButton");
+  
+        if(rButton.style.color == "green"){
+  	  rButton.style.color = "black";
+          clearInterval(refreshTimer);
+        }else{
+  	  rButton.style.color = "green";
+          refreshTimer = setInterval(function(){
+    	    location.reload(true);
+          }, 300000);
+        }
       }
     </script>
   </body>
